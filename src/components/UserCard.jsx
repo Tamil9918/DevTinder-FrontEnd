@@ -1,5 +1,5 @@
 const userCard = ({ user }) => {
-  const { firstName, lastName, photoUrl, about, skills } = user;
+  const { firstName, lastName, photoUrl, age, gender, about } = user;
   return (
     <div className="card bg-base-200 w-96 shadow-xl">
       <figure>
@@ -15,6 +15,8 @@ const userCard = ({ user }) => {
           {firstName + " " + lastName}
         </h2>
         <p className="flex justify-center">{about}</p>
+        <p className="flex justify-center">{age}</p>
+        <p className="flex justify-center">{gender}</p>
         <div className="card-actions justify-center my-4">
           <button className="btn btn-primary">Ignore</button>
 
